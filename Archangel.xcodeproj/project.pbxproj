@@ -14,6 +14,14 @@
 		2C2BE38327A154B20030F9AB /* ArchangelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE38227A154B20030F9AB /* ArchangelTests.swift */; };
 		2C2BE38D27A154B20030F9AB /* ArchangelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE38C27A154B20030F9AB /* ArchangelUITests.swift */; };
 		2C2BE38F27A154B20030F9AB /* ArchangelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE38E27A154B20030F9AB /* ArchangelUITestsLaunchTests.swift */; };
+		2C2BE39C27A157880030F9AB /* Sessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE39B27A157880030F9AB /* Sessions.swift */; };
+		2C2BE39E27A157C00030F9AB /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE39D27A157C00030F9AB /* Points.swift */; };
+		2C2BE3A027A1580C0030F9AB /* scientia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE39F27A1580C0030F9AB /* scientia.swift */; };
+		2C2BE3A427A167200030F9AB /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE3A227A167200030F9AB /* dataModel.xcdatamodeld */; };
+		2C2BE3A627A168BA0030F9AB /* coreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE3A527A168BA0030F9AB /* coreDataManager.swift */; };
+		2C2BE3A927A1712C0030F9AB /* pointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE3A827A1712C0030F9AB /* pointView.swift */; };
+		2C2BE3AD27A177260030F9AB /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2BE3AC27A177260030F9AB /* SlideOverCard */; };
+		2C2BE3AF27A177F40030F9AB /* addPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BE3AE27A177F40030F9AB /* addPointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,13 @@
 		2C2BE38827A154B20030F9AB /* ArchangelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchangelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2BE38C27A154B20030F9AB /* ArchangelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchangelUITests.swift; sourceTree = "<group>"; };
 		2C2BE38E27A154B20030F9AB /* ArchangelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchangelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C2BE39B27A157880030F9AB /* Sessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sessions.swift; sourceTree = "<group>"; };
+		2C2BE39D27A157C00030F9AB /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
+		2C2BE39F27A1580C0030F9AB /* scientia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scientia.swift; sourceTree = "<group>"; };
+		2C2BE3A327A167200030F9AB /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
+		2C2BE3A527A168BA0030F9AB /* coreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataManager.swift; sourceTree = "<group>"; };
+		2C2BE3A827A1712C0030F9AB /* pointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pointView.swift; sourceTree = "<group>"; };
+		2C2BE3AE27A177F40030F9AB /* addPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2BE3AD27A177260030F9AB /* SlideOverCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +110,11 @@
 		2C2BE37027A154B10030F9AB /* Archangel */ = {
 			isa = PBXGroup;
 			children = (
+				2C2BE3A727A16A280030F9AB /* Model */,
 				2C2BE37127A154B10030F9AB /* ArchangelApp.swift */,
 				2C2BE37327A154B10030F9AB /* ContentView.swift */,
+				2C2BE3AA27A171380030F9AB /* subViews */,
+				2C2BE3A127A158190030F9AB /* tabViews */,
 				2C2BE37527A154B20030F9AB /* Assets.xcassets */,
 				2C2BE37727A154B20030F9AB /* Preview Content */,
 			);
@@ -127,6 +146,34 @@
 			path = ArchangelUITests;
 			sourceTree = "<group>";
 		};
+		2C2BE3A127A158190030F9AB /* tabViews */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BE39B27A157880030F9AB /* Sessions.swift */,
+				2C2BE39D27A157C00030F9AB /* Points.swift */,
+				2C2BE39F27A1580C0030F9AB /* scientia.swift */,
+			);
+			path = tabViews;
+			sourceTree = "<group>";
+		};
+		2C2BE3A727A16A280030F9AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BE3A227A167200030F9AB /* dataModel.xcdatamodeld */,
+				2C2BE3A527A168BA0030F9AB /* coreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C2BE3AA27A171380030F9AB /* subViews */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BE3A827A1712C0030F9AB /* pointView.swift */,
+				2C2BE3AE27A177F40030F9AB /* addPointsView.swift */,
+			);
+			path = subViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +190,9 @@
 			dependencies = (
 			);
 			name = Archangel;
+			packageProductDependencies = (
+				2C2BE3AC27A177260030F9AB /* SlideOverCard */,
+			);
 			productName = Archangel;
 			productReference = 2C2BE36E27A154B10030F9AB /* Archangel.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 2C2BE36527A154B10030F9AB;
+			packageReferences = (
+				2C2BE3AB27A177260030F9AB /* XCRemoteSwiftPackageReference "SlideOverCard" */,
+			);
 			productRefGroup = 2C2BE36F27A154B10030F9AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2BE39E27A157C00030F9AB /* Points.swift in Sources */,
+				2C2BE3AF27A177F40030F9AB /* addPointsView.swift in Sources */,
+				2C2BE3A427A167200030F9AB /* dataModel.xcdatamodeld in Sources */,
 				2C2BE37427A154B10030F9AB /* ContentView.swift in Sources */,
 				2C2BE37227A154B10030F9AB /* ArchangelApp.swift in Sources */,
+				2C2BE39C27A157880030F9AB /* Sessions.swift in Sources */,
+				2C2BE3A027A1580C0030F9AB /* scientia.swift in Sources */,
+				2C2BE3A627A168BA0030F9AB /* coreDataManager.swift in Sources */,
+				2C2BE3A927A1712C0030F9AB /* pointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +645,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C2BE3AB27A177260030F9AB /* XCRemoteSwiftPackageReference "SlideOverCard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joogps/SlideOverCard.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C2BE3AC27A177260030F9AB /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C2BE3AB27A177260030F9AB /* XCRemoteSwiftPackageReference "SlideOverCard" */;
+			productName = SlideOverCard;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2C2BE3A227A167200030F9AB /* dataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C2BE3A327A167200030F9AB /* dataModel.xcdatamodel */,
+			);
+			currentVersion = 2C2BE3A327A167200030F9AB /* dataModel.xcdatamodel */;
+			path = dataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C2BE36627A154B10030F9AB /* Project object */;
 }
